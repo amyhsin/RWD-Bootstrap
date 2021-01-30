@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/> 
+        <title>切版設計</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="layout.css">
+        <script>
+            function box(img, title, description){
+            document.write( `
+            <div class="box">
+                <img src="img/${img}.jpg"/>
+                <div class="title"><a href="#">${title}</a></div>
+                <div class="description"><a href="#">${description}</a></div>
+            </div>
+            `
+            )
+            }
+        </script>
+    </head>
+
+    <body>
+        <!-- <div class="head">料理食堂</div> -->
+            <nav class="navbar navbar-expand-lg navbar-dark px-5 mb-4" style="background-color: #003344">
+                <a class="navbar-brand mr-4" style="color: #ffffff; font-size: 30px;">Cuisine</a>
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav mr-auto mx-4">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">過年年菜</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">烘焙點心</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">素食/蔬食</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">氣炸鍋</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          其他
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color: #003344;">
+                          <a class="dropdown-item" href="#">寶寶副食品</a>
+                          <a class="dropdown-item" href="#">慢性病</a>
+                          <a class="dropdown-item" href="#">毛孩專區</a>
+                        </div>
+                    </li>
+                  </ul>
+                  <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="搜尋食譜/食材" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜尋</button>
+                  </form>
+                </div>
+              </nav>
+
+
+            <div class="main-pic">
+                <div class="left-pic"><a href="#"><img src="img/steak.jpg"></a></div>
+                <div class="right-pic">
+                    <a href="#"><img src="img/pasta.jpg"></a>
+                    <a href="#"><img src="img/pizza.jpg"></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="main-title">今日話題食譜</div>
+                <script>
+                    box('chick','宮保雞丁','天竺鼠車車');
+                    box('beef','香煎牛排','Mark');
+                    box('tofu','麻婆豆腐','蘇媽媽廚房');
+                    box('spa','海鮮義大利麵','草莓姐姐');
+                </script>
+                <div class="main-title">人氣食譜</div>
+                <script>
+                    box('chickensoup','雞肉濃湯','Woody');
+                    box('soup','十全大補雞湯','神廚阿祥');
+                    box('vegetable','營養滿分炒時蔬','東東三寶媽');
+                    box('cheesecake','巴斯克乳酪蛋糕','S.weetie');
+                </script>
+                <div class="main-title">新廚上菜</div>
+                <script>
+                    box('kimchi','韓式泡菜鍋','紗紗起司飯捲');
+                    box('egg','蒸蛋(簡單又好吃!)','瑋瑋媽咪');
+                    box('pudding','焦糖布丁','Max甜點師');
+                    box('clamsoup','蒜頭蛤蜊雞湯','總舖師海哥');
+                </script>
+            </div>
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4 col-sm-4 col-md-2">
+                            <div class="footer-box">
+                                <li id="footertitle">關於料理食堂</li>
+                                <li><a href="#">公司資訊</a></li>
+                                <li><a href="#">徵才訊息</a></li>
+                                <li><a href="#">廣告合作</a></li>
+                                <li><a href="#">服務條款</a></li>
+                                <li><a href="#">隱私權政策</a></li>
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-2">
+                            <div class="footer-box">
+                                <li id="footertitle">會員服務</li>
+                                <li><a href="#">食譜收藏</a></li>
+                                <li><a href="#">個人頁面</a></li>
+                                <li><a href="#">帳號設定</a></li>
+                                <li><a href="#">忘記密碼</a></li>
+                                <li><a href="#">我的訂單</a></li>
+                            </div>
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-2">
+                            <div class="footer-box">
+                                <li id="footertitle">逛食譜</li>
+                                <li><a href="#">人氣食譜</a></li>
+                                <li><a href="#">新廚上菜</a></li>
+                                <li><a href="#">今日話題</a></li>
+                                <li><a href="#">最新食譜</a></li>
+                                <li><a href="#">全部分類</a></li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
